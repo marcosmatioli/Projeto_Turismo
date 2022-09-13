@@ -1,0 +1,20 @@
+1)criar um grupo de 3 pessoas
+2) criar o planejamento no trello das sprints
+2) criar uma pasta chama Projeto Oreon
+e abrir o git
+3)criar a pasta oreon-1 e criar o site de acordo com o codigo
+e fazer 4 commits
+4) criar um modelo conceitual e fisico
+com as seguintes informações
+banco -oreon
+tabelas- cliente(cod cli,nome, idade, sexo, email, telefone,
+planos(cod plano,tipo, descricação
+pedido(cod pedido,cod cli,cod plano, data,hora,valor,descricao.
+fazer 6 inserts
+fazer 3 updates
+fazer um inner join juntando as 3 tabelas
+fazer 4 commits
+5) fazer a tabela de quantos códigos foi programado por
+cada integrante-- 5 reais a cada 20 linhas de código
+6)criar uma apresentação no powerpoint para explicar
+todo os processo de desenvolvimento para o seu gerente
