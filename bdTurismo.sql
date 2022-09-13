@@ -31,8 +31,6 @@ foreign key (cod_plano) references tbPlanos(cod_plano)
 
 /*banco -oreon
 fazer 6 inserts
-
-fazer um inner join juntando as 3 tabelas
 fazer 4 commits
 */
 insert into tbCliente (nome_cli,idade,sexo,email,telefone) values ("Batman",35,"M","batnabatcaverna@heroi.com.br","966668987");
@@ -48,3 +46,7 @@ insert into tbPedido (cod_cli,cod_plano,data,hora,valor,descricao) values (1,2,"
 update tbCliente set email = "batmansemrobim@heroi.com.br" where cod_cli = 1;
 update tbPlanos set tipo = "Plano Rock in Rio", descricao = "Passagem para 2 dias completos no Rock in Rio com hospedagem e buffet inclusos" where cod_plano = 1;
 update tbPedido set descricao = "Pacote Rock in Rio com hospedagem no hotel de copacabana no Rio de Janeiro" where cod_cli = 1;
+
+/*fazer um inner join juntando as 3 tabelas*/
+select * from tbCliente inner join tbPedido on (tbCliente.cod_cli = tbPedido.cod_cli)
+inner join tbPlanos on (tbPlanos.cod_plano = tbPedido.cod_plano);
